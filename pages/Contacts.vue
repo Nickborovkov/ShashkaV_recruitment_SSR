@@ -1,12 +1,6 @@
 <template>
   <div>
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 400px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">
-        Контакты
-      </h3>
-      <div class="line"></div>
-    </div>
+    <divider text="Контакты"/>
 
     <div style="display: flex; justify-content:center;">
       <a href="#">
@@ -23,15 +17,7 @@
       </a>
     </div>
 
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 1500px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">
-        Записаться на консультацию
-      </h3>
-      <div class="line"></div>
-    </div>
-
-    <pre>{{$v}}</pre>
+    <divider text="Записаться на консультацию"/>
 
     <div style="position: relative; padding-bottom: 111px;">
       <div style="display: flex; justify-content:center; flex-wrap: wrap; width: 600px; margin: auto">
@@ -115,9 +101,11 @@
 
 <script>
   import {instance} from "/api/instance";
+  import Divider from "../UI/elements/Divider";
 
   export default {
     name: "Contacts",
+    components: {Divider},
     layout: 'BasePageLayout',
     data() {
       return {

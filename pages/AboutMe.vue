@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 300px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">Обо мне</h3>
-      <div class="line"></div>
-    </div>
+    <divider text="Обо мне"/>
 
     <div style="display: flex; padding-bottom: 50px;">
       <div style="width: 60%; padding: 100px 150px 0px 40px; box-sizing: border-box">
@@ -37,7 +33,7 @@
       </div>
     </div>
 
-    <div style="width: 100%; height: 1px; background-color: #cccccc; margin-bottom: 50px;"></div>
+    <divider/>
 
     <div style="display: flex; padding-bottom: 50px;">
       <div class="photo__Container">
@@ -86,11 +82,7 @@
     <!--        </div>-->
     <!--    </div>-->
 
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 300px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">Квалификация</h3>
-      <div class="line"></div>
-    </div>
+    <divider text="Квалификация"/>
 
     <div>
       <div style="display: flex; justify-content:center; margin: auto; flex-wrap: wrap" >
@@ -108,10 +100,12 @@
 
 <script>
   import scan from '@/assets/images/diplomas/diploma.jpg'
+  import Divider from "../UI/elements/Divider";
 
   export default {
     name: "AboutMe",
     layout: 'BasePageLayout',
+    components: { Divider },
     data() {
       return{
         qualification: [

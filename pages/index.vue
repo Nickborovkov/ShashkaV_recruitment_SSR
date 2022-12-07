@@ -3,7 +3,7 @@
 
     <banner/>
 
-    <div style="width: 100%; height: 1px; background-color: #cccccc; margin: 50px 0;"></div>
+    <divider />
 
     <greetings/>
 
@@ -21,24 +21,14 @@
     </div>
 
 
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 1000px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">C чем я могу
-        Вам помочь</h3>
-      <div class="line"></div>
-    </div>
+    <divider text="С чем я могу вам помочь"/>
 
         <div style="margin: 30px 0;">
           <hint-chip v-for="tag in tags" :key="tag.id" :tag="tag.name" />
         </div>
 
 
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 1500px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">Записаться на
-        консультацию</h3>
-      <div class="line"></div>
-    </div>
+    <divider text="Записаться на консультацию"/>
 
     <div>
       <h3 style="color: #999999; font-size: 20px; font-weight: 400;">
@@ -63,10 +53,11 @@
   import Banner from "../components/main/Banner";
   import PerkCard from "../UI/elements/PerkCard";
   import HintChip from "../UI/elements/HintChip";
+  import Divider from "../UI/elements/Divider";
 
   export default {
     name: 'IndexPage',
-    components: {Banner, Greetings, PerkCard, HintChip},
+    components: {Banner, Greetings, PerkCard, HintChip, Divider},
     layout: 'BasePageLayout',
     data() {
       return {

@@ -19,13 +19,6 @@
   }
 </script>
 
-<style lang="scss">
-  * {
-    margin: 0;
-    padding: 0;
-  }
-</style>
-
 <style scoped lang="scss">
   .content {
     max-width: 1200px;

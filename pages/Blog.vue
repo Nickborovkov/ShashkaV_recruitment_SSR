@@ -1,12 +1,7 @@
 <template>
   <div>
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 1500px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">
-        Мой блог: полезная информация
-      </h3>
-      <div class="line"></div>
-    </div>
+    <divider text="Мой блог: полезная информация"/>
+
     <div class="posts">
       <NuxtLink
         style="text-decoration: none; transition: 0.5s"
@@ -44,11 +39,13 @@
   import blog7 from '/assets/images/blog/vertical/blog7.jpg'
   import blog8 from '/assets/images/blog/vertical/blog8.jpg'
   import blog9 from '/assets/images/blog/vertical/blog9.jpg'
+  import Divider from "../UI/elements/Divider";
 
 
   export default {
     name: "Blog",
     layout: 'BasePageLayout',
+    components: { Divider },
     data() {
       return {
         posts: [

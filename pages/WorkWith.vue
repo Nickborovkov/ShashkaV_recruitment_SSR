@@ -1,12 +1,6 @@
 <template>
   <div>
-    <div style="display: flex; padding: 50px 0;">
-      <div class="line"></div>
-      <h3 style="width: 800px; font-weight: 500; font-size: 25px; text-align: center; padding: 0 20px; color: #d39999">
-        С чем я работаю
-      </h3>
-      <div class="line"></div>
-    </div>
+    <divider text="С чем я работаю"/>
 
     <div v-for="(workItem, index) in workWith" :key="workItem.id" style="margin-bottom: 60px;">
       <h3 style="font-size: 30px; color: #999999; padding-bottom: 50px; color: #d39999">{{workItem.title}}</h3>
@@ -38,10 +32,12 @@
   import career from '@/assets/images/workWith/career.jpg'
   import coach from '@/assets/images/workWith/coach.jpg'
   import pack from '@/assets/images/workWith/pack.jpg'
+  import Divider from "../UI/elements/Divider";
 
   export default {
     name: "Workwith",
     layout: 'BasePageLayout',
+    components: { Divider },
     data() {
       return {
         workWith: [
