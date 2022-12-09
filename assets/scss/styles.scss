@@ -9,6 +9,10 @@
   display: flex;
   justify-content: space-between;
 }
+.flex-end-line {
+  display: flex;
+  justify-content: flex-end;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }

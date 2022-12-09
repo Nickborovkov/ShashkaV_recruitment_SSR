@@ -1,8 +1,8 @@
 <template>
   <section class="wrapper">
     <div class="title">
-      <h2 class="title__item">{{title}}</h2>
-      <h2 class="title__subtitle">( {{ subtitle }} )</h2>
+      <h2 v-if="title" class="title__item">{{title}}</h2>
+      <h2 v-if="subtitle" class="title__subtitle">( {{ subtitle }} )</h2>
     </div>
 
     <ul class="list">
@@ -19,11 +19,11 @@
     props: {
       title: {
         type: String,
-        required: true
+        required: false
       },
       subtitle: {
         type: String,
-        required: true
+        required: false
       },
       workFormatItems: {
         type: Array,
@@ -51,9 +51,11 @@
     }
   }
   .list {
-    margin-left: 100px;
+    margin-left: 70px;
     &__item {
-      margin: 10px 0; color: #d39999; font-size: 25px;
+      margin: 10px 0;
+      color: #d39999;
+      font-size: 25px;
     }
     &__text {
       font-size: 16px;

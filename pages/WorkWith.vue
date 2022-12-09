@@ -2,119 +2,101 @@
   <div>
     <divider text="С чем я работаю"/>
 
-    <div v-for="(workItem, index) in workWith" :key="workItem.id" style="margin-bottom: 60px;">
-      <h3 style="font-size: 30px; color: #999999; padding-bottom: 50px; color: #d39999">{{workItem.title}}</h3>
-      <div>
-        <div style="display: flex">
-          <div>
-            <img style="width: 500px;" :src="workItem.image" alt="workwith__img">
-          </div>
-          <ul style="box-sizing: border-box; padding: 50px 50px 50px 150px" >
-            <li style="font-size: 20px; color: #555555; margin: 15px 0;" v-for="item in workItem.tags" :key="item + randomId">
-              {{item}}</li>
-          </ul>
+    <section class="work-item" v-for="(item, i) in workWith" :id="item.id">
+      <h2 class="work-item__title">{{item.title}}</h2>
+      <h2 v-if="item.subtitle" class="work-item__subtitle">( {{item.subtitle}} )</h2>
+
+      <div class="flex-between">
+        <div class="work-item__image-wrapper">
+          <img class="work-item__image" :src="item.image">
         </div>
-        <h5 style="font-size: 25px; color: #999999; padding-top: 20px; text-align: right">Стоимость:
-          <span style="color: #d39999">{{workItem.price}} ₽</span>
-        </h5>
-        <div class="meeting__holder">
-          <router-link class="meeting" to="/contacts">Записаться на консультацию</router-link>
+        <div v-if="item.tags">
+          <work-format-type-section class="work-item__tags" :work-format-items="item.tags"/>
         </div>
 
-        <div v-if="index !== 3" style="width: 100%; height: 1px; background-color: #cccccc; margin: 50px 0;"></div>
+        <div v-if="item.pack">
+          <div  v-for="subItem in item.pack" :key="subItem.id">
+            <ul class="subItem-list">
+              <li class="subItem-list__item" v-for="point in subItem.description" :key="point">
+                <span class="subItem-list__text">{{ point }}</span>
+              </li>
+            </ul>
+            <div class="work-item__price">Стоимость: {{subItem.price}}₽</div>
+          </div>
+        </div>
+
       </div>
-    </div>
+      <div v-if="item.tags" class="work-item__price">Стоимость: {{item.price}}₽</div>
+      <div class="work-item__price-button flex-end-line">
+        <app-button type="link" to="/Contacts">Записаться на консультацию</app-button>
+      </div>
+      <divider v-if="i !== 3" />
+    </section>
   </div>
 </template>
 
 <script>
-  import cv from '@/assets/images/workWith/cv.jpg'
-  import career from '@/assets/images/workWith/career.jpg'
-  import coach from '@/assets/images/workWith/coach.jpg'
-  import pack from '@/assets/images/workWith/pack.jpg'
   import Divider from "../UI/elements/Divider";
+  import {workWithValues} from "../helpers/textValues";
+  import WorkFormatTypeSection from "../components/workFormat/WorkFormatTypeSection";
+  import AppButton from "../UI/forms/AppButton";
 
   export default {
     name: "Workwith",
     layout: 'BasePageLayout',
-    components: { Divider },
+    components: { Divider, WorkFormatTypeSection, AppButton },
     data() {
       return {
-        workWith: [
-          {
-            id: 0,
-            title: 'Работа с резюме',
-            image: cv,
-            tags: [
-              'Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание',
-              'Описание Описание Описание'
-            ],
-            price: '2000',
-          },
-          {
-            id: 2,
-            title: 'Карьерное консультирование',
-            image: career,
-            tags: [
-              'Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание',
-              'Описание Описание Описание'
-            ],
-            price: '4000',
-          },
-          {
-            id: 3,
-            title: 'Коуч-сессии',
-            image: coach,
-            tags: [
-              'Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание',
-              'Описание Описание Описание'
-            ],
-            price: '4000',
-          },
-          {
-            id: 4,
-            title: 'Пакетные сессии',
-            image: pack,
-            tags: [
-              'Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание Описание Описание Описание',
-              'Описание Описание Описание Описание Описание',
-              'Описание Описание Описание'
-            ],
-            price: '15000',
-          },
-        ]
+        workWith: workWithValues
       }
     }
   }
 </script>
 
-<style scoped>
-  .line{
-    width: 100%;
-    height: 1px;
-    margin-top: 13px;
-    background-color: #cccccc;
+<style scoped lang="scss">
+  @import "assets/scss/variables";
+
+  .work-item {
+    &__title {
+      font-weight: bold;
+      font-size: 25px;
+      color: $accent-dust-rose;
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      color: $accent-dust-rose;
+      font-size: 18px;
+    }
+    &__image {
+      width: 600px;
+      margin-top: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+    }
+    &__price {
+      text-align: right;
+      font-size: 20px;
+      font-weight: bold;
+      color: $accent-dust-rose;
+    }
+    &__price-button {
+      margin-top: 50px;
+    }
+    &__tags {
+      padding-top: 20px;
+    }
   }
-  .meeting__holder{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-  }
-  .meeting{
-    background-color: #d39999;
-    color: white;
-    text-decoration:none;
-    padding: 10px 5px;
-    transition: .5s;
-  }
-  .meeting:hover{
-    background-color: #000000;
+  .subItem-list {
+    margin-left: 70px;
+    &__item {
+      margin: 10px 0;
+      color: #d39999;
+      font-size: 25px;
+    }
+    &__text {
+      font-size: 16px;
+      color: $accent-middle-grey;
+    }
   }
 </style>
