@@ -14,7 +14,7 @@
           <work-format-type-section class="work-item__tags" :work-format-items="item.tags"/>
         </div>
 
-        <div v-if="item.pack">
+        <div v-if="item.pack" style="padding-top: 20px;">
           <div  v-for="subItem in item.pack" :key="subItem.id">
             <ul class="subItem-list">
               <li class="subItem-list__item" v-for="point in subItem.description" :key="point">
