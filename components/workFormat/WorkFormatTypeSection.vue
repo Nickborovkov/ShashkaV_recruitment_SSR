@@ -2,7 +2,7 @@
   <section class="wrapper">
     <div class="title">
       <h2 class="title__item">{{title}}</h2>
-      <h2 class="title__item">( {{ subtitle }} )</h2>
+      <h2 class="title__subtitle">( {{ subtitle }} )</h2>
     </div>
 
     <ul class="list">
@@ -41,6 +41,12 @@
   .title {
     margin-left: 40px;
     &__item {
+      font-size: 25px;
+      color: $accent-dust-rose
+    }
+    &__subtitle {
+      font-size: 16px;
+      color: #999999;
       color: $accent-dust-rose
     }
   }

@@ -41,6 +41,7 @@
     &__text {
       font-weight: 500;
       font-size: 25px;
+      font-weight: bold;
       text-align: center;
       padding: 0 30px;
       white-space: nowrap;

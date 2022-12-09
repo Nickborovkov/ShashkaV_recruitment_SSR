@@ -2,10 +2,11 @@
   <div>
     <divider text="Формат работы"/>
 
-    <div class="flex-center">
-      <background-video :video="video" width="550"/>
+    <div class="flex-between">
+      <background-video :video="video" width="530"/>
 
       <work-format-types/>
+
     </div>
   </div>
 </template>

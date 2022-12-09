@@ -24,5 +24,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 50px;
+    font-family: "Montserrat Normal";
   }
 </style>

@@ -1,18 +1,19 @@
 <template>
-  <video
-    id="video_background"
-    class="video"
-    preload="auto"
-    no-controls
-    autoplay
-    loop
-    playsinline
-    muted
-    :width="width"
-    :src="video"
-  />
+  <div>
+    <video
+            id="video_background"
+            class="video"
+            preload="auto"
+            no-controls
+            autoplay
+            loop
+            playsinline
+            muted
+            :width="width"
+            :src="video"
+    />
+  </div>
 </template>
-
 <script>
     export default {
         name: "BackgroundVideo",
