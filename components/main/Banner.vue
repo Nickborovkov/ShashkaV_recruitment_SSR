@@ -1,7 +1,6 @@
 <template>
   <div class="appBanner">
     <h1 class="appBanner__fancy">Карьерное консультирование и коучинг</h1>
-<!--    <p class="appBanner__plain">Карьерное консультирование и коучинг</p>-->
   </div>
 </template>
 
@@ -13,20 +12,15 @@
 
 <style scoped>
   .appBanner {
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
-    padding: 30px 0;
   }
 
   .appBanner__fancy {
     text-align: center;
-    font-size: 70px;
-    font-family: 'Oooh Baby', cursive;
+    font-size: 80px;
+    font-family: 'French Kiss';
     color: #555555;
   }
 
-  .appBanner__plain {
-    text-align: right;
-    padding-top: 10px;
-  }
 </style>

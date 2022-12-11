@@ -1,28 +1,16 @@
 <template>
-    <div style="display: flex; padding-bottom: 50px;">
-      <div style="width: 60%; padding: 100px 150px 0px 40px; box-sizing: border-box">
-        <h3 style="font-size: 30px; padding-bottom: 30px; color: #555555">
-          Добрый день, <br>
-          давайте знакомиться!
-        </h3>
-        <h3 style="font-size: 25px; padding-bottom: 60px; color: #555555">
-          Меня зовут <span style="color: #d39999">Шашина Виктория</span>, я профессиональный коуч и <br>
-          карьерный консультант
-        </h3>
-        <h4 style="text-align: right; padding-bottom: 40px; color: #d39999; font-size: 18px; font-weight: normal">
-          Я точно знаю, что каждый человек имеет <br>
-          огромный потенциал для реализации <br>
-          всех своих возможностей <br>
-          и профессиональных запросов
+    <div class="flex-center">
+      <div class="description">
+        <h3 class="description__name">Шашина Виктория</h3>
+        <h3 class="description__job">Карьерный консультант и коуч</h3>
+        <h4 class="description__motivation">
+          Я точно знаю, что каждый из нас может воплотить все свои
+          самые смелые мечты, построить карьеру мечты и жить в
+          гармонии с собой и окружающими.
         </h4>
-        <h5 style="text-align: right;padding-bottom: 20px; color: #999999; font-weight: normal; font-size: 18px">
-          Буду рада встретиться с Вами на консультации.
-        </h5>
-        <h5 style="text-align: right; padding-bottom: 60px; color: #999999; font-weight: normal; font-size: 18px">
-          Провожу встречи как очно, так и онлайн.
-        </h5>
-        <h5 style="color: #c2b599; font-weight: normal; font-size: 18px">
-          С заботой о Вашем будущем и Вашей карьере ❤️
+        <h5 class="description__catchphrase">
+          Буду рада встретиться с вами на консультации
+          Провожу встречи как очно, так и онлайн
         </h5>
       </div>
       <div class="photo__Container">
@@ -37,18 +25,47 @@
     }
 </script>
 
-<style scoped>
-  .personalInfo {
-    display: flex;
-    justify-content: space-between;
+<style scoped lang="scss">
+  @import "assets/scss/variables";
+  .description {
+    width: 60%;
+    padding: 50px 150px 0px 40px;
+    box-sizing: border-box;
+    &__name {
+      font-size: 40px;
+      padding-bottom: 30px;
+      color: $accent-middle-grey
+    }
+    &__job {
+      font-size: 25px;
+      padding-bottom: 60px;
+      color: $base-light-grey;
+    }
+    &__motivation {
+      text-align: right;
+      padding-bottom: 40px;
+      color: $accent-dust-rose;
+      font-size: 18px;
+      font-weight: normal
+    }
+    &__catchphrase {
+      text-align: right;
+      padding-bottom: 20px;
+      color: $base-light-grey;
+      font-weight: normal;
+      font-size: 18px
+    }
   }
   .photo__Container {
     width: 40%;
   }
 
   .photo {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
     display: block;
     margin: auto;
-    width: 100%;
+    width: 90%;
   }
 </style>

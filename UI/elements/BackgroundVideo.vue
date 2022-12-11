@@ -32,8 +32,8 @@
 
 <style scoped lang="scss">
   .video {
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
   }
 </style>

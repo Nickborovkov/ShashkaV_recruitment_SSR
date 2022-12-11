@@ -7,11 +7,9 @@
 
     <greetings/>
 
-    <div style="padding: 40px 0">
-      <h3 style="font-weight: 400; text-align: center; color: #999999">
-        У каждого из Вас огромный потенциал для реализации всех Ваших возможностей, <br> а я могу помочь его раскрыть:)
-      </h3>
-    </div>
+    <h3 class="text">
+      С заботой о Вашем будущем и Вашей карьере ❤️
+    </h3>
 
   </div>
 </template>
@@ -28,11 +26,13 @@
   }
 </script>
 
-<style scoped>
-  .line {
-    width: 100%;
-    height: 1px;
-    margin-top: 13px;
-    background-color: #cccccc;
+<style scoped lang="scss">
+  @import "assets/scss/variables";
+  .text {
+    margin-top: 100px;
+    font-weight: 400;
+    text-align: center;
+    color: $base-gold;
+    font-size: 25px;
   }
 </style>
