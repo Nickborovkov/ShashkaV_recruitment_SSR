@@ -29,5 +29,8 @@ export default {
   router: {
     linkActiveClass: 'custom-active-link',
     linkExactActiveClass: 'custom-exact-active-link',
+    router: {
+      base: '/ShashkaV_recruitment_SSR/'
+    }
   }
 }
