@@ -37,6 +37,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     transition: .4s;
+    border: none;
     &:hover {
       background-color: #000000;
     }
