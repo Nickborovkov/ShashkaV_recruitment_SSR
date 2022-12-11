@@ -1,5 +1,4 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'shashka_v_recruitment_ssr',
     htmlAttrs: {
@@ -15,43 +14,19 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     './assets/scss/main.scss'
   ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+    components: true,
   modules: [
-    'nuxtjs-mdi-font'
+    'nuxtjs-mdi-font',
+    '@nuxtjs/axios'
   ],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  axios: {
+    baseURL: 'https://api.telegram.org/bot5129181542:AAEVw_cbrqs0i32-rMY0Be72m97HUghEjJo/'
   },
-
   router: {
     linkActiveClass: 'custom-active-link',
     linkExactActiveClass: 'custom-exact-active-link',
   }
-
-  // alias: {
-  //   "~~": "/<rootDir>",
-  //   "@@": "/<rootDir>",
-  //   "~": "/<rootDir>",
-  //   "@": "/<rootDir>",
-  //   "assets": "/<rootDir>/assets",
-  //   "public": "/<rootDir>/public"
-  // }
 }

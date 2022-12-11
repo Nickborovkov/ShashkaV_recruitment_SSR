@@ -33,7 +33,7 @@
 <style scoped lang="scss">
   @import "assets/scss/variables";
   .navItem {
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     color: #2a2825;
     margin: 0 15px;

@@ -9,6 +9,10 @@
   display: flex;
   justify-content: space-between;
 }
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
 .flex-end-line {
   display: flex;
   justify-content: flex-end;
