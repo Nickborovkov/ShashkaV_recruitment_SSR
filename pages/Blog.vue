@@ -12,17 +12,15 @@
       >
         <div style="position: relative">
           <img class="post__image" :src="post.image" alt="blog_image">
-          <div class="post__tags">
-            <p class="post__tag" v-for="tag in post.tags" :key="tag + randomId">{{tag}}</p>
-          </div>
+<!--          <div class="post__tags">-->
+<!--            <p class="post__tag" v-for="tag in post.tags" :key="tag + randomId">{{tag}}</p>-->
+<!--          </div>-->
         </div>
         <div style="padding: 10px;">
           <h3 class="post__title">
             {{post.title}}
           </h3>
-          <p style="color: #999999; font-size: 13px; text-transform: uppercase; padding: 10px 0 20px 0">{{post.date}}</p>
-          <p style="color: #999999">Краткое описание краткое описание краткое описание краткое описание краткое
-            описание</p>
+          <p style="color: #999999">{{post.description}}</p>
         </div>
       </NuxtLink>
     </div>
@@ -40,6 +38,7 @@
   import blog8 from '/assets/images/blog/vertical/blog8.jpg'
   import blog9 from '/assets/images/blog/vertical/blog9.jpg'
   import Divider from "../UI/elements/Divider";
+  import {posts} from "../helpers/Blog";
 
 
   export default {
@@ -48,98 +47,7 @@
     components: { Divider },
     data() {
       return {
-        posts: [
-          {
-            id: 0,
-            image: blog1,
-            date: '25 декабря 2022',
-            title: 'Название поста',
-            tags: ['Резюме', 'Совет'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 1,
-            image:  blog2,
-            date: '1 марта 2022',
-            title: 'Название поста',
-            tags: ['Карьера', 'Рассуждение', ],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 2,
-            image:  blog3,
-            date: '16 апреля 2022',
-            title: 'Название поста',
-            tags: ['Отношения', 'Рассуждение', ],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 3,
-            image:  blog4,
-            date: '5 мая 2022',
-            title: 'Название поста',
-            tags: ['Выгорание', 'Совет'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 4,
-            image: blog5,
-            date: '13 июня 2022',
-            title: 'Название поста',
-            tags: ['Собеседование', 'Вопрос'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 5,
-            image: blog6,
-            date: '28 августа 2022',
-            title: 'Название поста',
-            tags: ['Синдром самозванца', 'Совет'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 6,
-            image: blog7,
-            date: '1 сентября 2022',
-            title: 'Название поста',
-            tags: ['Семья', 'Вопрос'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 7,
-            image: blog8,
-            date: '8 сентября 2022',
-            title: 'Название поста',
-            tags: ['Жизненные цели', 'Рассуждение'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-          {
-            id: 8,
-            image: blog9,
-            date: '11 сентября 2022',
-            title: 'Название поста',
-            tags: ['Успех', 'Совет'],
-            text1: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text2: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-            text3: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ducimus, iste quasi quis similique velit. Aliquid culpa distinctio dolores dolorum, eveniet id, ipsa laboriosam mollitia nesciunt numquam, quaerat ut? Ab assumenda dignissimos dolor doloremque facilis, minima natus nulla, obcaecati omnis porro quae, quasi quidem quod temporibus totam veniam vitae.',
-          },
-        ]
+        posts: posts
       }
     },
     computed: {
