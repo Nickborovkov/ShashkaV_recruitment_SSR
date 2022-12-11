@@ -39,7 +39,7 @@
     &__job {
       font-size: 25px;
       padding-bottom: 60px;
-      color: $base-light-grey;
+      color: $accent-middle-grey;
     }
     &__motivation {
       text-align: right;

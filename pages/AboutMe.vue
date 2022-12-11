@@ -2,96 +2,65 @@
   <div>
     <divider text="Обо мне"/>
 
-    <div style="display: flex; padding-bottom: 50px;">
-      <div style="width: 60%; padding: 100px 150px 0px 40px; box-sizing: border-box">
-        <h3 style="font-size: 30px; padding-bottom: 30px; color: #555555">
-          Добрый день, <br>
-          давайте знакомиться!
-        </h3>
-        <h3 style="font-size: 25px; padding-bottom: 60px; color: #555555">
-          Меня зовут <span style="color: #d39999">Шашина Виктория</span>, я профессиональный коуч и <br>
-          карьерный консультант
-        </h3>
-        <h4 style="text-align: right; padding-bottom: 40px; color: #d39999; font-size: 18px; font-weight: normal">
-          Я точно знаю, что каждый человек имеет <br>
-          огромный потенциал для реализации <br>
-          всех своих возможностей <br>
-          и профессиональных запросов
-        </h4>
-        <h5 style="text-align: right;padding-bottom: 20px; color: #999999; font-weight: normal; font-size: 18px">
-          Буду рада встретиться с Вами на консультации.
-        </h5>
-        <h5 style="text-align: right; padding-bottom: 60px; color: #999999; font-weight: normal; font-size: 18px">
-          Провожу встречи как очно, так и онлайн.
-        </h5>
-        <h5 style="color: #c2b599; font-weight: normal; font-size: 18px">
-          С заботой о Вашем будущем и Вашей карьере ❤️
-        </h5>
+    <div class="flex-center">
+      <div class="description">
+        <h3 class="description__name">Шашина Виктория</h3>
+        <div class="description__perks">
+          <h5 class="description__perks__item">
+            <span class="rose mdi mdi-check-all" />
+            Сертифицированный ICI коуч и карьерный консультант
+          </h5>
+          <h5 class="description__perks__item">
+            <span class="rose mdi mdi-check-all" />
+            Team Lead IT-Recruiter
+          </h5>
+          <h5 class="description__perks__item">
+            <span class="rose mdi mdi-check-all" />
+            Ментор сообщества PROwomen
+          </h5>
+          <h5 class="description__perks__item">
+            <span class="rose mdi mdi-check-all" />
+            Автор образовательных онлайн-интенсивов и контента для карьерных площадок
+          </h5>
+          <h5 class="description__perks__item">
+            <span class="rose mdi mdi-check-all" />
+            Наставник яндекс практикума
+          </h5>
+        </div>
+        <div class="description__info">
+          <h3 class="description__info__inner">
+            Имею высшее психологическое образование, являюсь членом международной
+            федерации коучинга. Регулярно принимаю участие в групповых супервизиях для
+            прорабавыния коуч сессий, направленных на решение лайф-запросов.
+          </h3>
+        </div>
+        <div class="description__info">
+          <h3 class="description__info__inner">
+            На данный момент занимаю должность Team Lead IT-Recruiter в одном из лучших
+            кадровых агентств России. В мои обязанности входит полный цикл подбора
+            IT-специалистов.
+          </h3>
+          <h3 class="description__info__inner">
+            Работаю с большим портфелем вакансий от junior специалистов до
+            топ-менеджмента. Экспертиза, накопленная за время работы в сфере HR и рекрутинге
+            позволяет мне брать в работу самые разные карьерные запросы.
+          </h3>
+        </div>
       </div>
       <div class="photo__Container">
         <img class="photo" src="@/assets/images/photos/avatar3_alt.jpg" alt="">
       </div>
     </div>
 
-    <divider/>
-
-    <div style="display: flex; padding-bottom: 50px;">
-      <div class="photo__Container">
-        <img class="photo" src="@/assets/images/photos/avatar4.jpg" alt="">
-      </div>
-      <div style="width: 60%; padding: 100px 40px 0px 150px; box-sizing: border-box">
-        <h3 style="font-size: 18px; color: #d39999; padding-bottom: 30px;">В рамках карьерного коучинга и консультирования:</h3>
-        <ul style="padding-left: 40px;">
-          <li style="padding: 10px 0; color: #999999">Помогу с определением ваших дальнейших шагов для профессионального развития</li>
-          <li style="padding: 10px 0; color: #999999">Расскажу с чего начать, если решили поменять профессию</li>
-          <li style="padding: 10px 0; color: #999999">Помогу увидеть свои сильные и слабые стороны</li>
-          <li style="padding: 10px 0; color: #999999">Составлю эффективное резюме</li>
-          <li style="padding: 10px 0; color: #999999">Расскажу как успешно пройти собеседование.</li>
-        </ul>
-
-        <h3 style="font-size: 18px; color: #d39999; padding: 30px 0;">В рамках коуч сессий:</h3>
-        <ul style="padding-left: 40px;">
-          <li style="padding: 10px 0; color: #999999">помогу найти свои цели и пути их достижения, проработать широкий спектр личных и</li>
-        </ul>
-      </div>
-    </div>
-
-    <!--    <div style="width: 100%; height: 1px; background-color: #cccccc; margin-bottom: 50px;"></div>-->
-
-    <!--    <div style="display: flex; padding-bottom: 50px;">-->
-    <!--        <div style="width: 60%; padding: 100px 100px 0px 40px; box-sizing: border-box">-->
-    <!--            <div style="display: flex; justify-content:center; flex-wrap: wrap">-->
-    <!--                <div style="width: 280px; height: 150px; border-bottom: 1px solid #cccccc; border-right: 1px solid #cccccc;-->
-    <!--                padding: 30px; box-sizing: border-box">-->
-    <!--                    <p style="font-weight: bold; font-size: 40px; color: #d39999">4</p>-->
-    <!--                    <p style="color: #999999">года помогаю людям находить работу их мечты</p>-->
-    <!--                </div>-->
-    <!--                <div style="width: 280px; height: 150px; border-bottom: 1px solid #cccccc; padding: 30px; box-sizing: border-box"></div>-->
-    <!--                <div style="width: 280px; height: 150px; border-right: 1px solid #cccccc; padding: 30px; box-sizing: border-box">-->
-    <!--                    <p style="font-weight: bold; font-size: 40px; color: #d39999">2</p>-->
-    <!--                    <p style="color: #999999">проекта по карьерному консультированию</p>-->
-    <!--                </div>-->
-    <!--                <div style="width: 280px; height: 150px; padding: 30px; box-sizing: border-box">-->
-    <!--                    <p style="font-weight: bold; font-size: 40px; color: #d39999">25</p>-->
-    <!--                    <p style="color: #999999">лет люблю эту жизнь</p>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="photo__Container">-->
-    <!--            <img class="photo" src="@/assets/images/avatar/main_avatar.jpg" alt="">-->
-    <!--        </div>-->
-    <!--    </div>-->
-
     <divider text="Квалификация"/>
 
     <div>
-      <div style="display: flex; justify-content:center; margin: auto; flex-wrap: wrap" >
-        <div v-for="diploma in qualification" :key="diploma.id" style="width: 250px; margin: 10px;">
+      <div style="display: flex; justify-content:center; margin: auto; flex-wrap: wrap">
+        <div v-for="diploma in qualification" :key="diploma.id" style="width: 350px; margin: 10px;">
           <img
             style="width: 100%; display: block; margin: 10px;"
             :src="diploma.scan" alt="diploma_img"
           >
-          <p style="text-align: center; color: #c2b599; font-weight: bold">{{diploma.name}}</p>
         </div>
       </div>
     </div>
@@ -99,41 +68,69 @@
 </template>
 
 <script>
-  import scan from '@/assets/images/diplomas/diploma.jpg'
+  import diploma1 from '../assets/images/diplomas/diploma_1.jpg'
+  import diploma2 from '../assets/images/diplomas/diploma_2.jpg'
   import Divider from "../UI/elements/Divider";
 
   export default {
     name: "AboutMe",
     layout: 'BasePageLayout',
-    components: { Divider },
+    components: {Divider},
     data() {
-      return{
+      return {
         qualification: [
-          {id: 0, name: 'Описание диплома', scan: scan},
-          {id: 1, name: 'Описание диплома', scan: scan},
-          {id: 2, name: 'Описание диплома', scan: scan},
-          {id: 3, name: 'Описание диплома', scan: scan},
-          {id: 4, name: 'Описание диплома', scan: scan},
-          {id: 5, name: 'Описание диплома', scan: scan},
+          {id: 0, scan: diploma1},
+          {id: 1, scan: diploma2},
         ]
       }
     }
   }
 </script>
 
-<style scoped>
-  .line{
-    width: 100%;
-    height: 1px;
-    margin-top: 13px;
-    background-color: #cccccc;
+<style scoped lang="scss">
+  @import "assets/scss/variables";
+  .description{
+    width: 60%;
+    &__name {
+      font-size: 40px;
+      padding-bottom: 10px;
+      color: $accent-middle-grey;
+    }
+    &__perks {
+      width: 600px;
+      margin-left: 10px;
+      &__item {
+        color: $accent-middle-grey;
+        font-size: 18px;
+      }
+    }
+    &__info {
+      margin-top: 100px;
+      text-align: right;
+      color: $accent-middle-grey;
+      &:last-child {
+        /*text-align: left;*/
+      }
+      &__inner {
+        width: 650px;
+      }
+    }
   }
-  .photo__Container{
+  .rose {
+    color: $accent-dust-rose;
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  .photo__Container {
     width: 40%;
   }
-  .photo{
+
+  .photo {
     display: block;
     margin: auto;
-    width: 100%;
+    width: 90%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
   }
 </style>
