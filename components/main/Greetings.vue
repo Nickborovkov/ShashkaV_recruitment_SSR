@@ -51,7 +51,7 @@
     &__catchphrase {
       text-align: right;
       padding-bottom: 20px;
-      color: $base-light-grey;
+      color: $accent-middle-grey;
       font-weight: normal;
       font-size: 18px
     }
