@@ -5,7 +5,7 @@
     <app-button type="link" to="/Blog"><span class="mdi mdi-arrow-left" /></app-button>
 
     <div>
-      <img style="display: block; margin: auto; width: 70%;" :src="definePost.imageh" alt="">
+      <img style="display: block; margin: auto; width: 70%; -webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;" :src="definePost.imageh" alt="">
     </div>
 
     <div style="margin-top: 30px;">

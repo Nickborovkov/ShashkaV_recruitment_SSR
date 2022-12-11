@@ -41,6 +41,11 @@ export default {
   build: {
   },
 
+  router: {
+    linkActiveClass: 'custom-active-link',
+    linkExactActiveClass: 'custom-exact-active-link',
+  }
+
   // alias: {
   //   "~~": "/<rootDir>",
   //   "@@": "/<rootDir>",

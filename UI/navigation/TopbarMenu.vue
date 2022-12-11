@@ -2,6 +2,7 @@
   <nav>
     <NuxtLink
       class="navItem"
+      custom-exact-active-link="custom-exact-active-link"
       v-for="link in config"
       :key="link.id"
       :to="link.path"
@@ -29,12 +30,16 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "assets/scss/variables";
   .navItem {
     font-size: 16px;
     text-decoration: none;
     color: #2a2825;
     margin: 0 15px;
     font-weight: 500;
+  }
+  .custom-exact-active-link {
+    color: $accent-dust-rose;
   }
 </style>

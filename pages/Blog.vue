@@ -4,14 +4,14 @@
 
     <div class="posts">
       <NuxtLink
-        style="text-decoration: none; transition: 0.5s"
+        style="text-decoration: none; transition: 0.5s; -webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;"
         :to="`/blog/${post.id}`"
         class="post"
         v-for="post in posts"
         :key="post.id"
       >
         <div style="position: relative">
-          <img class="post__image" :src="post.image" alt="blog_image">
+          <img style="-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;" class="post__image" :src="post.image" alt="blog_image">
 <!--          <div class="post__tags">-->
 <!--            <p class="post__tag" v-for="tag in post.tags" :key="tag + randomId">{{tag}}</p>-->
 <!--          </div>-->
@@ -28,15 +28,6 @@
 </template>
 
 <script>
-  import blog1 from '/assets/images/blog/vertical/blog1.jpg'
-  import blog2 from '/assets/images/blog/vertical/blog2.jpg'
-  import blog3 from '/assets/images/blog/vertical/blog3.jpg'
-  import blog4 from '/assets/images/blog/vertical/blog4.jpg'
-  import blog5 from '/assets/images/blog/vertical/blog5.jpg'
-  import blog6 from '/assets/images/blog/vertical/blog6.jpg'
-  import blog7 from '/assets/images/blog/vertical/blog7.jpg'
-  import blog8 from '/assets/images/blog/vertical/blog8.jpg'
-  import blog9 from '/assets/images/blog/vertical/blog9.jpg'
   import Divider from "../UI/elements/Divider";
   import {posts} from "../helpers/Blog";
 
@@ -50,11 +41,6 @@
         posts: posts
       }
     },
-    computed: {
-      randomId() {
-        return Math.random() * Math.random() * 1000000
-      }
-    }
   }
 </script>
 
