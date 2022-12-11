@@ -38,6 +38,7 @@
     border-radius: 5px;
     transition: .4s;
     border: none;
+    font-size: 20px;
     &:hover {
       background-color: #000000;
     }

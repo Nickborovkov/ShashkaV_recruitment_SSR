@@ -66,7 +66,7 @@
       </div>
 
       <div style="display: flex; justify-content:center; margin-top: 30px;">
-        <button class="button" @click="newBotMessage">Записаться</button>
+        <app-button type="button" @click="newBotMessage">Записаться</app-button>
       </div>
 
       <div v-if="success"  style="background-color: #cde6cd; text-align: center; width: 300px; padding: 20px; position: absolute; bottom: 0;
@@ -86,10 +86,11 @@
 <script>
   import Divider from "../UI/elements/Divider";
   import ContactIcons from "../components/ContactIcons";
+  import AppButton from "../UI/forms/AppButton";
 
   export default {
     name: "Contacts",
-    components: { Divider, ContactIcons },
+    components: { Divider, ContactIcons, AppButton },
     layout: 'BasePageLayout',
     data() {
       return {
@@ -168,12 +169,6 @@
 
 <style scoped lang="scss">
   @import "assets/scss/main";
-  .line{
-    width: 100%;
-    height: 1px;
-    margin-top: 13px;
-    background-color: #cccccc;
-  }
   .contactIcon{
     text-decoration: none;
     font-size: 20px;
@@ -199,6 +194,9 @@
     font-size: 20px;
     color: #555555;
     border: 1px solid #cccccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
   .textarea__holder{
     width: 600px;
@@ -213,6 +211,9 @@
     font-size: 20px;
     display: block;
     margin: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
   }
   .button{
     width: 250px;
