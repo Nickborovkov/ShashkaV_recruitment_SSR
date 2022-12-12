@@ -26,8 +26,8 @@ export default {
   axios: {
     baseURL: 'https://api.telegram.org/bot5129181542:AAEVw_cbrqs0i32-rMY0Be72m97HUghEjJo/'
   },
-  static: {
-    prefix: '/ShashkaV_recruitment_SSR/'
+  build: {
+    publicPath: 'https://nickborovkov.github.io/ShashkaV_recruitment_SSR/'
   },
   router: {
     linkActiveClass: 'custom-active-link',
