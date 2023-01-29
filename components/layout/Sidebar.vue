@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar">
+  <div class="sidebar" :class="{'sidebar-active': showSidebar}">
 
     <div class="burger" :class="{'burger-active': showSidebar}" @click="$emit('toggle-sidebar')">
       <svg v-if="!showSidebar" style="color: #2a2825" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -102,7 +102,7 @@
     padding: 50px 0;
     position: fixed;
     z-index: 100;
-    left: 0;
+    left: -300px;
     top: 0;
     width: 300px;
     display: block;
@@ -111,6 +111,10 @@
     -moz-border-radius: 0 0 10px 0;
     border-radius: 0 0 10px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .sidebar-active {
+    left: 0px;
   }
 
   .links {
