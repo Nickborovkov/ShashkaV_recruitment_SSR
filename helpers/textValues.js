@@ -1,7 +1,7 @@
-import cv from '@/assets/images/workWith/cv.jpg'
-import career from '@/assets/images/workWith/career.jpg'
-import coach from '@/assets/images/workWith/coach.jpg'
-import pack from '@/assets/images/workWith/pack.jpg'
+import cv from '../static/images/workWith/cv.jpg'
+import career from '../static/images/workWith/career.jpg'
+import coach from '../static/images/workWith/coach.jpg'
+import pack from '../static/images/workWith/pack.jpg'
 
 export const workFormatItems = {
   career: [

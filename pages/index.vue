@@ -41,7 +41,7 @@
       display: none;
     }
     .greetings {
-      margin-top: 30px;
+      margin-top: 70px;
     }
     .text {
       margin-top: 50px;

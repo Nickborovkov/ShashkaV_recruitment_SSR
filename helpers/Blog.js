@@ -1,22 +1,22 @@
-import blog1 from "../assets/images/blog/vertical/blog1.jpg";
-import blog2 from "../assets/images/blog/vertical/blog2.jpg";
-import blog3 from "../assets/images/blog/vertical/blog3.jpg";
-import blog4 from "../assets/images/blog/vertical/blog4.jpg";
-import blog5 from "../assets/images/blog/vertical/blog5.jpg";
-import blog6 from "../assets/images/blog/vertical/blog6.jpg";
-import blog7 from "../assets/images/blog/vertical/blog7.jpg";
-import blog8 from "../assets/images/blog/vertical/blog8.jpg";
-import blog9 from "../assets/images/blog/vertical/blog9.jpg";
+import blog1 from "../static/images/blog/vertical/blog1.jpg";
+import blog2 from "../static/images/blog/vertical/blog2.jpg";
+import blog3 from "../static/images/blog/vertical/blog3.jpg";
+import blog4 from "../static/images/blog/vertical/blog4.jpg";
+import blog5 from "../static/images/blog/vertical/blog5.jpg";
+import blog6 from "../static/images/blog/vertical/blog6.jpg";
+import blog7 from "../static/images/blog/vertical/blog7.jpg";
+import blog8 from "../static/images/blog/vertical/blog8.jpg";
+import blog9 from "../static/images/blog/vertical/blog9.jpg";
 
-import blog1h from "../assets/images/blog/horizontal/blog1.jpg";
-import blog2h from "../assets/images/blog/horizontal/blog2.jpg";
-import blog3h from "../assets/images/blog/horizontal/blog3.jpg";
-import blog4h from "../assets/images/blog/horizontal/blog4.jpg";
-import blog5h from "../assets/images/blog/horizontal/blog5.jpg";
-import blog6h from "../assets/images/blog/horizontal/blog6.jpg";
-import blog7h from "../assets/images/blog/horizontal/blog7.jpg";
-import blog8h from "../assets/images/blog/horizontal/blog8.jpg";
-import blog9h from "../assets/images/blog/horizontal/blog9.jpg";
+import blog1h from "../static/images/blog/horizontal/blog1.jpg";
+import blog2h from "../static/images/blog/horizontal/blog2.jpg";
+import blog3h from "../static/images/blog/horizontal/blog3.jpg";
+import blog4h from "../static/images/blog/horizontal/blog4.jpg";
+import blog5h from "../static/images/blog/horizontal/blog5.jpg";
+import blog6h from "../static/images/blog/horizontal/blog6.jpg";
+import blog7h from "../static/images/blog/horizontal/blog7.jpg";
+import blog8h from "../static/images/blog/horizontal/blog8.jpg";
+import blog9h from "../static/images/blog/horizontal/blog9.jpg";
 
 export const posts = [
   {

@@ -58,6 +58,7 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     z-index: 10;
+    position: relative;
     &__text {
       padding: 10px;
     }
@@ -82,6 +83,18 @@
     &:hover {
       transform: scale(1.02,1.02);
       box-shadow: 2px 2px 5px #dddddd, -2px -2px 5px #dddddd;
+    }
+    &:after {
+      content: '';
+      width: 80%;
+      height: 1px;
+      display: block;
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #ededed;
     }
   }
 </style>

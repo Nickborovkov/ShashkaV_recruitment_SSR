@@ -54,7 +54,7 @@
 <style scoped lang="scss">
   .content {
     max-width: 1200px;
-    margin: 30px auto 0 auto;
+    margin: 50px auto 50px auto;
     padding-bottom: 50px;
     font-family: "Montserrat Normal";
     min-height: 85vh;

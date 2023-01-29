@@ -14,7 +14,7 @@
         </h5>
       </div>
       <div class="photo__Container">
-        <img class="photo" src="/main_avatar.jpg" alt="">
+        <img class="photo" src="../../static/images/photos/main_avatar.jpg" alt="">
       </div>
     </div>
 </template>

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-  import video from "../assets/videos/V_gif.mp4"
+  import video from "../static/videos/V_gif.mp4"
   import Divider from "../UI/elements/Divider";
   import WorkFormatTypes from "../components/workFormat/WorkFormatTypes";
   import BackgroundVideo from "../UI/elements/BackgroundVideo";

@@ -5,7 +5,7 @@
     <div class="about_me">
       <info class="about_me__info" />
       <div class="photo__Container">
-        <img class="photo" src="@/assets/images/photos/avatar3_alt.jpg" alt="">
+        <img class="photo" src="../static/images/photos/avatar3_alt.jpg" alt="">
       </div>
     </div>
 
@@ -27,8 +27,8 @@
 </template>
 
 <script>
-  import diploma1 from '../assets/images/diplomas/diploma_1.jpg'
-  import diploma2 from '../assets/images/diplomas/diploma_2.jpg'
+  import diploma1 from '../static/images/diplomas/diploma_1.jpg'
+  import diploma2 from '../static/images/diplomas/diploma_2.jpg'
   import Divider from "../UI/elements/Divider";
   import AppModal from "../UI/elements/AppModal";
   import Info from "../components/aboutMe/Info";
