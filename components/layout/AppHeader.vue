@@ -13,23 +13,46 @@
         </svg>
       </div>
     </div>
+
     <div class="header mobile flex-end-line">
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+      <sidebar
+        class="sidebar"
+        :class="{'sidebar-active': showSidebar}"
+        :show-sidebar="showSidebar"
+        @toggle-sidebar="showSidebar = !showSidebar"
+        @close-sidebar="showSidebar = false"
+      />
+
+      <div class="flex-end-line">
+        <contact-icons iconSize="14" style="margin-right: 10px; margin-top: -10px;"/>
+
+        <div class="link" style="margin: -10px 0 0 0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right"
+               viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>
+        </div>
       </div>
     </div>
+
+
   </div>
 </template>
 
 <script>
   import TopbarMenu from "../../UI/navigation/TopbarMenu";
   import {ContactIcons} from "../../.nuxt/components";
+  import Sidebar from "./Sidebar";
 
   export default {
     name: "AppHeader",
-    components: { TopbarMenu, ContactIcons }
+    components: { TopbarMenu, ContactIcons, Sidebar },
+    data() {
+      return {
+        showSidebar: false
+      }
+    }
   }
 </script>
 
@@ -50,7 +73,16 @@
     padding: 20px;
     display: none;
   }
-  @media screen and (max-width: 900px){
+
+  .sidebar {
+    left: -300px;
+    transition: .2s;
+  }
+
+  .sidebar-active {
+    left: 0px;
+  }
+  @media screen and (max-width: 830px){
     .desctop {
       display: none;
     }
