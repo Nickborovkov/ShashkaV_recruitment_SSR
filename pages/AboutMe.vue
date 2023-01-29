@@ -2,8 +2,8 @@
   <div>
     <divider text="Обо мне"/>
 
-    <div class="flex-center">
-      <info />
+    <div class="about_me">
+      <info class="about_me__info" />
       <div class="photo__Container">
         <img class="photo" src="@/assets/images/photos/avatar3_alt.jpg" alt="">
       </div>
@@ -12,7 +12,7 @@
     <divider text="Квалификация"/>
 
     <div>
-      <div class="flex-center">
+      <div class="qualification">
         <div @click="openDiploma(diploma.id)" class="diploma" v-for="diploma in qualification" :key="diploma.id">
           <img class="diploma__img" :src="diploma.scan" alt="diploma_img">
         </div>
@@ -57,6 +57,13 @@
 </script>
 
 <style scoped lang="scss">
+  .about_me {
+    display: flex;
+    justify-content: center;
+    %__info {
+      width: 60%;
+    }
+  }
   .photo__Container {
     width: 40%;
   }
@@ -76,6 +83,29 @@
     cursor: pointer;
     &__img{
       width: 100%;
+    }
+  }
+
+  .qualification {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px){
+    .about_me {
+      flex-direction: column-reverse;
+      &__info {
+        width: 100%;
+      }
+    }
+    .photo__Container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .photo {
+      width: 70%;
     }
   }
 </style>

@@ -4,7 +4,7 @@
     <div class="description__perks">
       <h5 class="description__perks__item">
         <span class="rose mdi mdi-check-all" />
-        Сертифицированный ICI коуч и карьерный консультант
+        Сертифицированный ICI коуч <br> и карьерный консультант
       </h5>
       <h5 class="description__perks__item">
         <span class="rose mdi mdi-check-all" />
@@ -16,7 +16,7 @@
       </h5>
       <h5 class="description__perks__item">
         <span class="rose mdi mdi-check-all" />
-        Автор образовательных онлайн-интенсивов и контента для карьерных площадок
+        Автор образовательных онлайн-интенсивов <br> и контента для карьерных площадок
       </h5>
       <h5 class="description__perks__item">
         <span class="rose mdi mdi-check-all" />
@@ -86,4 +86,52 @@
     margin-right: 10px;
   }
 
+  @media screen and (max-width: 1024px){
+    .description{
+      &__name {
+        font-size: 35px;
+      }
+      &__perks {
+        &__item {
+          font-size: 16px;
+        }
+      }
+      &__info {
+        margin-left: 100px;
+        width: 100%;
+        &__inner {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .description{
+      &__name {
+        text-align: center;
+        font-size: 35px;
+      }
+      &__perks {
+        width: 300px;
+        display: block;
+        margin: auto;
+        &__item {
+          margin-left: 10px;
+          font-size: 14px;
+        }
+      }
+      &__info {
+        margin: 30px auto;
+        width: 95%;
+        text-align: center;
+        &__inner {
+          margin: 40px 0;
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 </style>
