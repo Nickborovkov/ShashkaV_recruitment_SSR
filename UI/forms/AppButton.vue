@@ -43,4 +43,10 @@
       background-color: #000000;
     }
   }
+
+  @media screen and (max-width: 450px){
+    .button{
+      font-size: 16px;
+    }
+  }
 </style>

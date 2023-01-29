@@ -1,6 +1,6 @@
 <template>
   <div>
-    <divider text="Мой блог: полезная информация"/>
+    <divider text="Полезная информация"/>
 
     <div class="posts">
       <NuxtLink

@@ -3,9 +3,13 @@
     <divider text="С чем я работаю"/>
 
     <div class="flex-between">
-      <background-video :video="video" width="530"/>
+      <article class="article">
+        <background-video :video="video" width="500"/>
+      </article>
+      <article class="article">
+        <work-format-types/>
+      </article>
 
-      <work-format-types/>
 
     </div>
   </div>
@@ -28,3 +32,18 @@
     }
   }
 </script>
+
+<style scoped lang="scss">
+  .article {
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 1023px){
+    .article:first-child {
+      display: none;
+    }
+    .article:last-child {
+      width: 100%;
+    }
+  }
+</style>

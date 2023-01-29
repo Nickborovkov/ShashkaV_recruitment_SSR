@@ -54,4 +54,36 @@
       background-color: $base-light-grey;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .divider {
+      margin: 30px 0;
+      padding: 30px 0;
+      &__simple {
+        margin: 40px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .divider {
+      margin: 20px 0;
+      padding: 20px 0;
+      &__simple {
+        margin: 30px 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .divider {
+      margin: 20px 0;
+      &__text {
+        font-size: 20px;
+      }
+      &__simple {
+        margin: 20px 0;
+      }
+    }
+  }
 </style>

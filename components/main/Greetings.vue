@@ -1,5 +1,5 @@
 <template>
-    <div class="flex-center">
+    <div class="wrapper">
       <div class="description">
         <h3 class="description__name">Шашина Виктория</h3>
         <h3 class="description__job">Карьерный консультант и коуч</h3>
@@ -27,6 +27,10 @@
 
 <style scoped lang="scss">
   @import "assets/scss/variables";
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
   .description {
     width: 60%;
     padding: 50px 150px 0px 40px;
@@ -67,5 +71,30 @@
     display: block;
     margin: auto;
     width: 90%;
+  }
+  @media screen and (max-width: 1024px){
+    .description {
+      padding: 30px 100px 0px 30px;
+      &__name {
+        font-size: 30px;
+      }
+    }
+    .photo__Container {
+      width: 35%;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .wrapper {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    .description {
+      width: 100%;
+      padding: 30px;
+    }
+    .photo__Container {
+      width: 60%;
+      margin: auto;
+    }
   }
 </style>

@@ -9,7 +9,7 @@
     <div class="content">
       <Nuxt/>
     </div>
-    <app-footer/>
+<!--    <app-footer/>-->
   </div>
 </template>
 
@@ -60,7 +60,12 @@
 
   .up__button {
     position: fixed;
-    bottom: 100px;
-    right: 100px;
+    bottom: 50px;
+    right: 50px;
+    opacity: .5;
+  }
+
+  .up__button:hover {
+    opacity: 1;
   }
 </style>

@@ -6,7 +6,7 @@
       <h2 class="work-item__title">{{item.title}}</h2>
       <h2 v-if="item.subtitle" class="work-item__subtitle">( {{item.subtitle}} )</h2>
 
-      <div class="flex-between">
+      <div class="wrapper flex-between">
         <div class="work-item__image-wrapper">
           <img class="work-item__image" :src="item.image">
         </div>
@@ -49,7 +49,7 @@
       return {
         workWith: workWithValues
       }
-    }
+    },
   }
 </script>
 
@@ -57,6 +57,7 @@
   @import "assets/scss/variables";
 
   .work-item {
+    padding: 0 20px;
     &__title {
       font-weight: bold;
       font-size: 25px;
@@ -97,6 +98,72 @@
     &__text {
       font-size: 16px;
       color: $accent-middle-grey;
+    }
+  }
+
+  @media screen and (max-width: 1023px){
+    .wrapper {
+      flex-direction: column;
+    }
+    .work-item {
+      &__title {
+        font-size: 20px;
+        text-align: center;
+      }
+      &__subtitle {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      &__image {
+        width: 60%;
+        display: block;
+        margin: auto;
+      }
+      &__price {
+        text-align: center;
+        margin-top: 20px;
+      }
+      &__price-button {
+        margin-top: 50px;
+        justify-content: center;
+      }
+    }
+    .subItem-list {
+      width: 70%;
+      margin: 20px auto;
+      &__item {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+      &__text {
+        font-size: 16px;
+      }
+      &__price {
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .work-item {
+      &__image {
+        width: 80%;
+      }
+    }
+    .subItem-list {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .work-item {
+      &__image {
+        width: 95%;
+      }
+    }
+    .subItem-list {
+      width: 90%;
     }
   }
 </style>

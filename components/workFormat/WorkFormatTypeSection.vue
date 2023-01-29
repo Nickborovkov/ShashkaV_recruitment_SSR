@@ -62,4 +62,45 @@
       color: $accent-middle-grey;
     }
   }
+
+  @media screen and (max-width: 1023px) {
+    .wrapper {
+      margin-bottom: 20px;
+    }
+
+    .title {
+      margin-left: 0;
+      text-align: center;
+      &__item {
+        font-size: 20px;
+      }
+      &__subtitle {
+        margin-bottom: 20px;
+      }
+    }
+
+    .list {
+      width: 70%;
+      margin: auto;
+      &__item {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .title {
+      margin-left: 0;
+      text-align: center;
+      &__item {
+        font-size: 16px;
+      }
+    }
+    .list {
+      width: 80%;
+      &__item {
+        font-size: 16px;
+      }
+    }
+  }
 </style>

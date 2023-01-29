@@ -6,10 +6,10 @@
       <contact-icons icon-size="50"/>
     </div>
 
-    <divider text="Записаться на консультацию"/>
+    <divider text="Запись на консультацию"/>
 
-    <div style="position: relative; padding-bottom: 111px;">
-      <div style="display: flex; justify-content:center; flex-wrap: wrap; width: 600px; margin: auto">
+    <div class="form">
+      <div class="form__inner">
         <div class="input_holder" style="position: relative">
           <input
             class="input"
@@ -174,14 +174,25 @@
     font-size: 20px;
     margin: 0 25px;
     color: #d39999;
-    font-size: 50px;
+    font-size: 40px;
     transition: .5s;
   }
   .contactIcon:hover{
     transform: scale(1.3,1.3);
   }
+  .form {
+    position: relative;
+    padding-bottom: 111px;
+    &__inner {
+      display: flex;
+      justify-content:center;
+      flex-wrap: wrap;
+      max-width: 620px;
+      margin: auto
+    }
+  }
   .input_holder{
-    width: 300px;
+    width: 310px;
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
@@ -199,11 +210,11 @@
     border-radius: 10px;
   }
   .textarea__holder{
-    width: 600px;
+    max-width: 600px;
     margin: auto;
   }
   .textarea{
-    width: 560px;
+    width: 80%;
     height: 120px;
     padding: 15px;
     color: #555555;

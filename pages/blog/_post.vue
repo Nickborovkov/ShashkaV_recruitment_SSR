@@ -2,7 +2,9 @@
   <div>
     <divider :text="definePost.title"/>
 
-    <app-button type="link" to="/Blog"><span class="mdi mdi-arrow-left" /></app-button>
+    <div style="margin-bottom: 20px;">
+      <app-button type="link" to="/Blog"><span class="mdi mdi-arrow-left" /></app-button>
+    </div>
 
     <div>
       <img class="post__img" :src="definePost.imageh" alt="post__img">
@@ -53,6 +55,14 @@
       width: 80%;
       margin: 50px auto 0 auto;
       padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .post {
+      &__img {
+        width: 95%;
+      }
     }
   }
 </style>
