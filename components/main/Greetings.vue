@@ -76,7 +76,7 @@
     .description {
       padding: 30px 100px 0px 30px;
       &__name {
-        font-size: 30px;
+        font-size: 35px;
       }
     }
     .photo__Container {
@@ -91,9 +91,21 @@
     .description {
       width: 100%;
       padding: 30px;
+      &__name {
+        text-align: center;
+      }
+      &__description__job {
+        text-align: center;
+      }
+      &__description__motivation {
+        text-align: center;
+      }
+      &__description__catchphrase {
+        text-align: center;
+      }
     }
     .photo__Container {
-      width: 60%;
+      width: 75%;
       margin: auto;
     }
   }

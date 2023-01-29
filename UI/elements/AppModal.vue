@@ -20,6 +20,7 @@
 
 <style scoped lang="scss">
   .layout {
+    z-index: 10000;
     position: fixed;
     top: 0;
     bottom: 0;

@@ -1,11 +1,10 @@
 <template>
   <div>
 
-    <banner/>
+    <banner class="banner"/>
+    <divider class="banner" />
 
-    <divider />
-
-    <greetings/>
+    <greetings class="greetings"/>
 
     <h3 class="text">
       С заботой о Вашем будущем и Вашей карьере ❤️
@@ -34,5 +33,19 @@
     text-align: center;
     color: $base-gold;
     font-size: 25px;
+    padding: 0 10px;
+  }
+
+  @media screen and (max-width: 830px){
+    .banner {
+      display: none;
+    }
+    .greetings {
+      margin-top: 30px;
+    }
+    .text {
+      margin-top: 50px;
+      font-size: 20px;
+    }
   }
 </style>

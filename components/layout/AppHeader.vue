@@ -60,9 +60,14 @@
   @import "assets/scss/main";
 
   .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: $base-pastel-color;
     padding: 20px 0;
     font-family: "Montserrat Normal";
+    z-index: 1000;
   }
   .link{
     text-decoration: none;

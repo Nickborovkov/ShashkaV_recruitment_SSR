@@ -9,7 +9,8 @@
     <div class="content">
       <Nuxt/>
     </div>
-<!--    <app-footer/>-->
+
+    <app-footer/>
   </div>
 </template>
 
@@ -53,16 +54,18 @@
 <style scoped lang="scss">
   .content {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     padding-bottom: 50px;
     font-family: "Montserrat Normal";
+    min-height: 85vh;
   }
 
   .up__button {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 60px;
+    right: 20px;
     opacity: .5;
+    z-index: 1000;
   }
 
   .up__button:hover {

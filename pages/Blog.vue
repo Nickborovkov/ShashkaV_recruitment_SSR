@@ -57,6 +57,7 @@
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    z-index: 10;
     &__text {
       padding: 10px;
     }

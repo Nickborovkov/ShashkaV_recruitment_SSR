@@ -16,10 +16,14 @@
 
 <style scoped>
     .footer {
-        padding: 20px;
+        padding: 0 20px;
         background-color: #000000;
+        position: fixed;
         bottom: 0;
-        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        /*width: 100%;*/
         font-family: "Montserrat Normal";
     }
 
