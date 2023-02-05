@@ -25,7 +25,7 @@
         <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
           <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
         </svg>
-        Автор образовательных онлайн-интенсивов <br> и контента для карьерных площадок
+        Соавтор образовательных онлайн-интенсивов <br> и контента для карьерных площадок
       </h5>
       <h5 class="description__perks__item">
         <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
