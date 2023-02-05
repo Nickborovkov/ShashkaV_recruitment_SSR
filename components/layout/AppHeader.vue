@@ -64,7 +64,7 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: $base-pastel-color;
+    background-color: #A2C1AF;
     padding: 20px 0;
     font-family: "Montserrat Normal";
     z-index: 1000;

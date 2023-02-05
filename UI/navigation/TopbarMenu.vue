@@ -35,7 +35,7 @@
     font-weight: 500;
   }
   .custom-exact-active-link {
-    color: $accent-dust-rose;
+    color: #92721F;
   }
 
   @media screen and (max-width: 980px){

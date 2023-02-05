@@ -6,7 +6,7 @@
     </div>
 
     <ul class="list">
-      <li class="list__item" v-for="item in workFormatItems" :key="item.id">
+      <li class="list__item" style="color: #A2C1AF" v-for="item in workFormatItems" :key="item.id">
         <span class="list__text">{{ item.description }}</span>
       </li>
     </ul>
@@ -42,12 +42,12 @@
     margin-left: 40px;
     &__item {
       font-size: 25px;
-      color: $accent-dust-rose
+      color: #A2C1AF
     }
     &__subtitle {
       font-size: 16px;
       color: #999999;
-      color: $accent-dust-rose
+      color: #A2C1AF
     }
   }
   .list {

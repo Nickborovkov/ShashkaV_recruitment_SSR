@@ -30,7 +30,7 @@
   @import "assets/scss/variables";
   .button{
     text-decoration: none;
-    background-color: $accent-dust-rose;
+    background-color: #91AC9D;
     color: #ffffff;
     padding: 10px;
     -webkit-border-radius: 5px;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <work-format-type-section title="Карьерное консультирование" subtitle="онлайн-сессия 60 минут" :work-format-items="items.career"/>
+    <work-format-type-section title="Карьерное консультирование" subtitle="онлайн-сессии 60 - 90 минут" :work-format-items="items.career"/>
     <work-format-type-section title="Коучинг" subtitle="онлайн-сессия 60 минут" :work-format-items="items.coach"/>
   </div>
 </template>

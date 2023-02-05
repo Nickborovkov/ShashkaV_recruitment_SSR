@@ -3,23 +3,34 @@
     <h3 class="description__name">Шашина Виктория</h3>
     <div class="description__perks">
       <h5 class="description__perks__item">
-        <span class="rose mdi mdi-check-all" />
+        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot"
+             viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
         Сертифицированный ICI коуч <br> и карьерный консультант
       </h5>
       <h5 class="description__perks__item">
-        <span class="rose mdi mdi-check-all" />
+        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
         Team Lead IT-Recruiter
       </h5>
       <h5 class="description__perks__item">
-        <span class="rose mdi mdi-check-all" />
+        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
         Ментор сообщества PROwomen
       </h5>
       <h5 class="description__perks__item">
-        <span class="rose mdi mdi-check-all" />
+        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
         Автор образовательных онлайн-интенсивов <br> и контента для карьерных площадок
       </h5>
       <h5 class="description__perks__item">
-        <span class="rose mdi mdi-check-all" />
+        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+        </svg>
         Наставник яндекс практикума
       </h5>
     </div>
@@ -66,6 +77,8 @@
       &__item {
         color: $accent-middle-grey;
         font-size: 18px;
+        display: flex;
+        align-items: center;
       }
     }
     &__info {
@@ -77,6 +90,7 @@
       }
       &__inner {
         width: 650px;
+        text-align: center;
       }
     }
   }

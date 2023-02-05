@@ -4,14 +4,17 @@
         <h3 class="description__name">Шашина Виктория</h3>
         <h3 class="description__job">Карьерный консультант и коуч</h3>
         <h4 class="description__motivation">
-          Я точно знаю, что каждый из нас может воплотить все свои
-          самые смелые мечты, построить карьеру мечты и жить в
-          гармонии с собой и окружающими.
+          Помогу определить стратегию развития карьеры и получить долгожданный оффер.
+          Я точно знаю, что каждый из нас может построить карьеру мечты и эффективно достигать своих целей. Буду рада встретиться с вами
+          на консультации Провожу встречи как очно, так и онлайн. <br>
         </h4>
-        <h5 class="description__catchphrase">
-          Буду рада встретиться с вами на консультации
-          Провожу встречи как очно, так и онлайн
-        </h5>
+        <h4 class="description__motivation">
+          С заботой о Вашем будущем и Вашей карьере ♥
+        </h4>
+<!--        <h5 class="description__catchphrase">-->
+<!--          Буду рада встретиться с вами на консультации-->
+<!--          Провожу встречи как очно, так и онлайн-->
+<!--        </h5>-->
       </div>
       <div class="photo__Container">
         <img class="photo" src="../../static/images/photos/main_avatar.jpg" alt="">
@@ -36,20 +39,20 @@
     padding: 50px 150px 0px 40px;
     box-sizing: border-box;
     &__name {
-      font-size: 40px;
-      padding-bottom: 30px;
+      font-size: 50px;
+      font-weight: 900;
       color: $accent-middle-grey
     }
     &__job {
-      font-size: 25px;
+      font-size: 35px;
       padding-bottom: 60px;
       color: $accent-middle-grey;
     }
     &__motivation {
-      text-align: right;
+      text-align: center;
       padding-bottom: 40px;
-      color: $accent-dust-rose;
-      font-size: 18px;
+      color: $accent-middle-grey;
+      font-size: 22px;
       font-weight: normal
     }
     &__catchphrase {

@@ -34,18 +34,18 @@
     &__line {
       width: 100%;
       height: 1px;
-      margin-top: 15px;
+      margin-top: 18px;
       background-color: $base-light-grey;
     }
 
     &__text {
       font-weight: 500;
-      font-size: 25px;
+      font-size: 35px;
       font-weight: bold;
       text-align: center;
       padding: 0 30px;
       white-space: nowrap;
-      color: $accent-dust-rose;
+      color: #92721F;
     }
     &__simple {
       margin: 50px 0;

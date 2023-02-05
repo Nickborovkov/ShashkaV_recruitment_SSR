@@ -5,12 +5,12 @@ import pack from '../static/images/workWith/pack.jpg'
 
 export const workFormatItems = {
   career: [
-    {id: 0, description: 'Составление эффективного резюме'},
-    {id: 1, description: 'Упаковка профиля на LinkedIn'},
+    {id: 0, description: 'Алгоритм действий: с чего начать, при смене профессии'},
+    {id: 1, description: 'Определение дальнейших шагов для профессионального развития'},
     {id: 2, description: 'Анализ рынка, помощь с определением зарплатных ожиданий'},
-    {id: 3, description: 'Алгоритм действий: с чего начать, при смене профессии'},
-    {id: 4, description: 'Определение дальнейших шагов для профессионального развития'},
-    {id: 5, description: 'Оценка сильных и слабых сторон'},
+    {id: 3, description: 'Оценка сильных и слабых сторон'},
+    {id: 4, description: 'Составление эффективного резюме'},
+    {id: 5, description: 'Упаковка профиля на LinkedIn и Habr Career'},
     {id: 6, description: 'Подготовка самопрезентации к собеседованию'},
     {id: 7, description: 'Тестовое интервью с HR'},
   ],

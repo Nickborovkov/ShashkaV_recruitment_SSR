@@ -61,11 +61,11 @@
     &__title {
       font-weight: bold;
       font-size: 25px;
-      color: $accent-dust-rose;
+      color: #A2C1AF;
       margin-bottom: 20px;
     }
     &__subtitle {
-      color: $accent-dust-rose;
+      color: #A2C1AF;
       font-size: 18px;
     }
     &__image {
@@ -79,7 +79,7 @@
       text-align: right;
       font-size: 20px;
       font-weight: bold;
-      color: $accent-dust-rose;
+      color: #92721F;
     }
     &__price-button {
       margin-top: 50px;

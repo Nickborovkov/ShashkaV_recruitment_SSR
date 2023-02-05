@@ -6,10 +6,6 @@
 
     <greetings class="greetings"/>
 
-    <h3 class="text">
-      С заботой о Вашем будущем и Вашей карьере ❤️
-    </h3>
-
   </div>
 </template>
 

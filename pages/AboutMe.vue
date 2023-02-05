@@ -5,7 +5,7 @@
     <div class="about_me">
       <info class="about_me__info" />
       <div class="photo__Container">
-        <img class="photo" src="../static/images/photos/avatar3_alt.jpg" alt="">
+        <img class="photo" src="../static/images/photos/new_avatar.jpg" alt="">
       </div>
     </div>
 
