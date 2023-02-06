@@ -29,7 +29,7 @@
   @import "assets/scss/variables";
 
   .divider {
-    padding: 50px 0;
+    padding: 40px 0;
 
     &__line {
       width: 100%;
@@ -48,7 +48,7 @@
       color: #92721F;
     }
     &__simple {
-      margin: 50px 0;
+      margin: 40px 0;
       width: 100%;
       height: 1px;
       background-color: $base-light-grey;

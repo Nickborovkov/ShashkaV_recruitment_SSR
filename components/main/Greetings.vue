@@ -11,10 +11,6 @@
         <h4 class="description__motivation">
           С заботой о Вашем будущем и Вашей карьере ♥
         </h4>
-<!--        <h5 class="description__catchphrase">-->
-<!--          Буду рада встретиться с вами на консультации-->
-<!--          Провожу встречи как очно, так и онлайн-->
-<!--        </h5>-->
       </div>
       <div class="photo__Container">
         <img class="photo" src="../../static/images/photos/main_avatar.jpg" alt="">
@@ -36,7 +32,7 @@
   }
   .description {
     width: 60%;
-    padding: 50px 150px 0px 40px;
+    padding: 10px 150px 0px 40px;
     box-sizing: border-box;
     &__name {
       font-size: 50px;
@@ -45,12 +41,12 @@
     }
     &__job {
       font-size: 35px;
-      padding-bottom: 60px;
+      padding-bottom: 40px;
       color: $accent-middle-grey;
     }
     &__motivation {
       text-align: center;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       color: $accent-middle-grey;
       font-size: 22px;
       font-weight: normal

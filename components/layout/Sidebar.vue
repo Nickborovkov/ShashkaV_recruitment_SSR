@@ -56,7 +56,7 @@
   @import "assets/scss/main";
 
   .custom-exact-active-link {
-    color: $accent-dust-rose;
+    color: $accent-mustard;
   }
 
   .burger {
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $base-pastel-color;
+    background-color: $base-olive-green;
   }
 
   .burger-active {

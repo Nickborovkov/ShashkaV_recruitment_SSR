@@ -54,7 +54,7 @@
 <style scoped lang="scss">
   .content {
     max-width: 1200px;
-    margin: 50px auto 50px auto;
+    margin: 50px auto 40px auto;
     padding-bottom: 50px;
     font-family: "Oranienbaum Regular";
     min-height: 85vh;

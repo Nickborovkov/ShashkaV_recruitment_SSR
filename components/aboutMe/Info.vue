@@ -1,57 +1,41 @@
 <template>
   <div class="description">
     <h3 class="description__name">Шашина Виктория</h3>
-    <div class="description__perks">
-      <h5 class="description__perks__item">
-        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot"
-             viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-        </svg>
-        Сертифицированный ICI коуч <br> и карьерный консультант
-      </h5>
-      <h5 class="description__perks__item">
-        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-        </svg>
-        Team Lead IT-Recruiter
-      </h5>
-      <h5 class="description__perks__item">
-        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-        </svg>
-        Ментор сообщества PROwomen
-      </h5>
-      <h5 class="description__perks__item">
-        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-        </svg>
-        Соавтор образовательных онлайн-интенсивов <br> и контента для карьерных площадок
-      </h5>
-      <h5 class="description__perks__item">
-        <svg style="color: #A2C1AF" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-          <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-        </svg>
-        Наставник яндекс практикума
-      </h5>
-    </div>
+    <ul class="description__perks">
+      <li>
+        <div class="description__perks__item">Сертифицированный ICI коуч <br> и карьерный консультант</div>
+      </li>
+      <li>
+        <div class="description__perks__item">Team Lead IT-Recruiter</div>
+      </li>
+      <li>
+        <div class="description__perks__item">Ментор сообщества PROwomen</div>
+      </li>
+      <li>
+        <div class="description__perks__item">Соавтор образовательных онлайн-интенсивов <br> и контента для карьерных площадок</div>
+      </li>
+      <li>
+        <div class="description__perks__item">Наставник яндекс практикума</div>
+      </li>
+    </ul>
     <div class="description__info">
-      <h3 class="description__info__inner">
+      <div class="description__info__inner">
         Имею высшее психологическое образование, являюсь членом международной
         федерации коучинга. Регулярно принимаю участие в групповых супервизиях для
         прорабавыния коуч сессий, направленных на решение лайф-запросов.
-      </h3>
+      </div>
     </div>
     <div class="description__info">
-      <h3 class="description__info__inner">
+      <div class="description__info__inner">
         На данный момент занимаю должность Team Lead IT-Recruiter в одном из лучших
         кадровых агентств России. В мои обязанности входит полный цикл подбора
         IT-специалистов.
-      </h3>
-      <h3 class="description__info__inner">
+      </div>
+      <div class="description__info__inner">
         Работаю с большим портфелем вакансий от junior специалистов до
         топ-менеджмента. Экспертиза, накопленная за время работы в сфере HR и рекрутинге
         позволяет мне брать в работу самые разные карьерные запросы.
-      </h3>
+      </div>
     </div>
   </div>
 </template>
@@ -67,37 +51,32 @@
   .description{
     width: 60%;
     &__name {
-      font-size: 40px;
+      font-size: 50px;
       padding-bottom: 10px;
       color: $accent-middle-grey;
     }
     &__perks {
       width: 600px;
       margin-left: 10px;
-      &__item {
+      color: $base-olive-green;
+      font-size: 30px;
+      &__item{
         color: $accent-middle-grey;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
+        font-size: 25px;
+        margin: 20px 0;
       }
     }
     &__info {
-      margin-top: 100px;
+      padding: 40px 0;
       text-align: right;
       color: $accent-middle-grey;
-      &:last-child {
-        /*text-align: left;*/
-      }
       &__inner {
-        width: 650px;
+        font-size: 20px;
+        width: 500px;
+        margin: 60px auto 0 auto;
         text-align: center;
       }
     }
-  }
-  .rose {
-    color: $accent-dust-rose;
-    font-size: 25px;
-    margin-right: 10px;
   }
 
   @media screen and (max-width: 1024px){

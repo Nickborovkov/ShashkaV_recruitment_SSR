@@ -21,7 +21,7 @@
 
 
     <app-modal :modal="diplomaModal" @close-modal="diplomaModal = false">
-      <img style="width: 100%;" :src="selectedDiploma.scan" alt="diploma_img">
+      <img class="diploma__modal-image" :src="selectedDiploma.scan" alt="diploma_img">
     </app-modal>
   </div>
 </template>
@@ -82,6 +82,9 @@
     margin: 10px;
     cursor: pointer;
     &__img{
+      width: 100%;
+    }
+    &__modal-image {
       width: 100%;
     }
   }

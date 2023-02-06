@@ -10,7 +10,8 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "assets/scss/variables";
   .appBanner {
     width: 800px;
     margin: 0 auto;
@@ -20,7 +21,7 @@
     text-align: center;
     font-size: 80px;
     font-family: 'French Kiss';
-    color: #555555;
+    color: $accent-middle-grey;
     padding-top: 30px;
   }
 
