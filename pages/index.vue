@@ -1,11 +1,10 @@
 <template>
   <div>
-
     <banner class="banner"/>
-    <divider class="banner" />
+
+    <divider />
 
     <greetings class="greetings"/>
-
   </div>
 </template>
 
@@ -23,14 +22,6 @@
 
 <style scoped lang="scss">
   @import "assets/scss/variables";
-  .text {
-    margin-top: 100px;
-    font-weight: 400;
-    text-align: center;
-    color: $base-gold;
-    font-size: 25px;
-    padding: 0 10px;
-  }
 
   @media screen and (max-width: 830px){
     .banner {
