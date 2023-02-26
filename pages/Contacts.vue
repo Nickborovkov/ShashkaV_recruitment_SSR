@@ -66,7 +66,7 @@
       </div>
 
       <div style="display: flex; justify-content:center; margin-top: 30px;">
-        <app-button type="button" @click="newBotMessage">Записаться</app-button>
+        <app-button type="button" @click="newBotMessage" :disabled="unlockButton || isFetching">Записаться</app-button>
       </div>
 
       <div v-if="success"  style="background-color: #cde6cd; text-align: center; width: 300px; padding: 20px; position: absolute; bottom: 0;
@@ -108,6 +108,11 @@
         isFetching: false
       }
     },
+    computed: {
+      unlockButton () {
+        return this.form.name === '' ||  this.form.phone === '' || this.form.theme === ''
+      }
+    },
     watch: {
       error() {
         if(this.error) {
@@ -143,7 +148,8 @@
 
         try {
           const response = await this.$axios.$post(`/sendMessage?chat_id=-452132239&parse_mode=html&text=${encodeURI(message)}`)
-          if(response.status === 200){
+          console.log(response)
+          if(response.ok){
             this.success = true
             this.clearFields()
             // this.$v.$reset()
@@ -152,6 +158,7 @@
           }
         }catch (e) {
           this.error = true
+          console.log(e)
         }finally {
           this.isFetching = false
         }

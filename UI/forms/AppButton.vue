@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="button" v-if="type === 'button'" @click="$emit('click')">
+    <button :disabled="disabled" class="button" :class="{disabled: disabled}" v-if="type === 'button'" @click="$emit('click')">
       <slot />
     </button>
 
@@ -21,6 +21,10 @@
       to: {
         type: String,
         required: false,
+      },
+      disabled: {
+        type: Boolean,
+        required: false
       }
     }
   }
@@ -41,6 +45,14 @@
     font-size: 20px;
     &:hover {
       background-color: #000000;
+    }
+  }
+
+  .disabled {
+    opacity: .5;
+    &:hover {
+      background-color: #91AC9D;
+      opacity: .5;
     }
   }
 
