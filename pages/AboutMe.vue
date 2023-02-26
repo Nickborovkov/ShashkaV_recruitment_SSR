@@ -29,6 +29,8 @@
 <script>
   import diploma1 from '../static/images/diplomas/diploma_1.jpg'
   import diploma2 from '../static/images/diplomas/diploma_2.jpg'
+  import diploma3 from '../static/images/diplomas/diploma_3.jpg'
+  import diploma4 from '../static/images/diplomas/diploma_4.jpg'
   import Divider from "../UI/elements/Divider";
   import AppModal from "../UI/elements/AppModal";
   import Info from "../components/aboutMe/Info";
@@ -42,6 +44,8 @@
         qualification: [
           {id: 0, scan: diploma1},
           {id: 1, scan: diploma2},
+          {id: 2, scan: diploma3},
+          {id: 3, scan: diploma4},
         ],
         diplomaModal: false,
         selectedDiploma: ''
@@ -90,6 +94,8 @@
   }
 
   .qualification {
+    max-width: 750px;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
