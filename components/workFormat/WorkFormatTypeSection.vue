@@ -72,10 +72,11 @@
       margin-left: 0;
       text-align: center;
       &__item {
-        font-size: 20px;
+        font-size: 25px;
       }
       &__subtitle {
         margin-bottom: 20px;
+        font-size: 20px;
       }
     }
 
@@ -91,9 +92,10 @@
   @media screen and (max-width: 767px) {
     .title {
       margin-left: 0;
+      font-size: 25px;
       text-align: center;
       &__item {
-        font-size: 16px;
+        font-size: 25px;
       }
     }
     .list {

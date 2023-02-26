@@ -3,7 +3,7 @@
     <h3 class="description__name">Шашина Виктория</h3>
     <ul class="description__perks">
       <li>
-        <div class="description__perks__item">Сертифицированный ICI коуч <br> и карьерный консультант</div>
+        <div class="description__perks__item">Сертифицированный ICI коуч и карьерный консультант</div>
       </li>
       <li>
         <div class="description__perks__item">Team Lead IT-Recruiter</div>
@@ -12,7 +12,7 @@
         <div class="description__perks__item">Ментор сообщества PROwomen</div>
       </li>
       <li>
-        <div class="description__perks__item">Соавтор образовательных онлайн-интенсивов <br> и контента для карьерных площадок</div>
+        <div class="description__perks__item">Соавтор образовательных онлайн-интенсивов и контента для карьерных площадок</div>
       </li>
       <li>
         <div class="description__perks__item">Наставник яндекс практикума</div>
@@ -53,11 +53,10 @@
     &__name {
       font-size: 50px;
       padding-bottom: 10px;
+      padding-left: 20px;
       color: $accent-middle-grey;
     }
     &__perks {
-      width: 600px;
-      margin-left: 10px;
       color: $base-olive-green;
       font-size: 30px;
       &__item{
@@ -68,39 +67,49 @@
     }
     &__info {
       padding: 40px 0;
-      text-align: right;
       color: $accent-middle-grey;
       &__inner {
         font-size: 20px;
         width: 500px;
         margin: 60px auto 0 auto;
-        text-align: center;
       }
     }
   }
 
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 966px){
+    .description__perks__item {
+      width: 300px;
+      font-size: 25px;
+      margin: 10px 0;
+    }
     .description{
       &__name {
         font-size: 35px;
       }
       &__perks {
+        width: 300px;
         &__item {
-          font-size: 16px;
+          width: 300px;
+          font-size: 25px;
+          margin: 10px 0;
         }
       }
       &__info {
-        margin-left: 100px;
+        text-align: center;
         width: 100%;
+        padding: 0;
+        margin: 0;
         &__inner {
           width: 100%;
           font-size: 16px;
+          margin: 0;
+          padding: 0;
         }
       }
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 780px) {
     .description{
       &__name {
         text-align: center;
@@ -118,7 +127,6 @@
       &__info {
         margin: 30px auto;
         width: 95%;
-        text-align: center;
         &__inner {
           margin: 40px 0;
           width: 100%;

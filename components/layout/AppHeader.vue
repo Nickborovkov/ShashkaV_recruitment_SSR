@@ -81,7 +81,7 @@
 
   .sidebar {
     left: -300px;
-    transition: .2s;
+    transition: .1s ease-in;
   }
 
   .sidebar-active {

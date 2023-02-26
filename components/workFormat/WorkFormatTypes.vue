@@ -11,8 +11,7 @@
 
   export default {
     name: "WorkFormatType",
-    components: {WorkFormatTypeSection},
-    component: {WorkFormatTypeSection},
+    components: { WorkFormatTypeSection },
     data() {
       return {
         items: workFormatItems

@@ -60,7 +60,7 @@
   }
 
   .burger {
-    transition: .2s;
+    transition: .1s ease-in;
     width: 40px;
     height: 40px;
     position: fixed;
@@ -98,7 +98,7 @@
   }
 
   .sidebar {
-    opacity: .9;
+    font-family: "Oranienbaum Regular";
     padding: 50px 0;
     position: fixed;
     z-index: 100;

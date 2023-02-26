@@ -89,11 +89,11 @@
     }
     .description {
       width: 100%;
-      padding: 30px;
+      padding: 0 30px 0 30px;
       &__name {
         text-align: center;
       }
-      &__description__job {
+      &__job {
         text-align: center;
       }
       &__description__motivation {
@@ -106,6 +106,17 @@
     .photo__Container {
       width: 75%;
       margin: auto;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .description {
+      &__name {
+        font-size: 30px;
+      }
+      &__job {
+        font-size: 20px;
+      }
     }
   }
 </style>
