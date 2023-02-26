@@ -41,11 +41,11 @@
   .title {
     margin-left: 40px;
     &__item {
-      font-size: 25px;
+      font-size: 35px;
       color: #A2C1AF
     }
     &__subtitle {
-      font-size: 16px;
+      font-size: 20px;
       color: #999999;
       color: #A2C1AF
     }
@@ -53,12 +53,12 @@
   .list {
     margin-left: 70px;
     &__item {
-      margin: 10px 0;
-      color: #d39999;
-      font-size: 25px;
+      margin: 20px 0;
+      color: $base-olive-green;
+      font-size: 20px;
     }
     &__text {
-      font-size: 16px;
+      font-size: 20px;
       color: $accent-middle-grey;
     }
   }

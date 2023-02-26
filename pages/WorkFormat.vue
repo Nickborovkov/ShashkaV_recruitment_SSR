@@ -60,13 +60,13 @@
     padding: 0 20px;
     &__title {
       font-weight: bold;
-      font-size: 25px;
+      font-size: 35px;
       color: #A2C1AF;
       margin-bottom: 20px;
     }
     &__subtitle {
       color: #A2C1AF;
-      font-size: 18px;
+      font-size: 25px;
     }
     &__image {
       width: 600px;
@@ -78,7 +78,7 @@
     }
     &__price {
       text-align: right;
-      font-size: 20px;
+      font-size: 25px;
       font-weight: bold;
       color: #92721F;
     }
@@ -92,12 +92,12 @@
   .subItem-list {
     margin-left: 70px;
     &__item {
-      margin: 10px 0;
-      color: #d39999;
-      font-size: 25px;
+      margin: 20px 0;
+      color: $base-olive-green;
+      font-size: 20px;
     }
     &__text {
-      font-size: 16px;
+      font-size: 20px;
       color: $accent-middle-grey;
     }
   }

@@ -55,6 +55,7 @@
       width: 80%;
       margin: 50px auto 0 auto;
       padding: 20px;
+      font-family: "Calibri Light";
     }
   }
 
